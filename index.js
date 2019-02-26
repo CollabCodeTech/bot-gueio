@@ -19,14 +19,13 @@ client.on("guildMemberAdd", member => {
   if (!channel) return;
 
   channel.send(`
-  ╚════════════════
-  Boas vinda ao servidor da CollabCode, ${member}. 
-  Por favor, entre nos dois canais a seguir antes de se divertir e trocar conhecimento com a galera!
-  <#547539568006660096>
-  <#547635393655210004>
-   ╔════════════════
-  
-  `);
+╚════════════════
+Boas vinda ao servidor da CollabCode, ${member}. 
+Por favor, entre nos dois canais a seguir antes de se divertir e trocar conhecimento com a galera!
+<#547539568006660096>
+<#547635393655210004>
+╔════════════════
+`);
   member.addRole("545502061601751040");
 });
 

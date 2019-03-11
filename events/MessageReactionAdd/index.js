@@ -6,8 +6,8 @@ const category = require("./config")[0];
 const enterChannel = (reaction, user, client) => {
   if (reaction.message.channel.name === ENTER_CHANNEL) {
     if (reaction.emoji.name === category.emoji.name) {
-      console.log(user.lastMessageID);
-      // user.message.member.addRole(category.role.id);
+      const member = reaction.emoji.guild.members.get(user.id);
+      member.addRole(category.role.id);
     }
   }
 };

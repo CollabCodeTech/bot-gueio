@@ -7,13 +7,11 @@ client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}`);
 });
 
-client.on("message", msg => {
-  if (msg.content === "!ping") msg.reply(`Pong! Latência | ${client.ping}ms`);
-});
+require("./events")(client);
 
 client.on("messageReactionAdd", (msg, user) => {
   if (
-    msg.message.channel.name === ENTER_CHANNEL &&
+    msg.message.channel.name === EN &&
     msg.emoji.id === "554458703034712080"
   ) {
     msg.message.member.addRole("554409793859747873");

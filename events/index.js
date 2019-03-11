@@ -8,6 +8,6 @@ module.exports = client => {
   client.on("guildMemberAdd", member => GuildMemberAdd.welcome(member));
   client.on("message", msg => Message.ping(msg, client));
   client.on("messageReactionAdd", (msg, user) =>
-    MessageReactionAdd.enterChannel(msg, user)
+    MessageReactionAdd.enterChannel(msg, user, client)
   );
 };

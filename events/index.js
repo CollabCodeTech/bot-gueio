@@ -10,4 +10,8 @@ module.exports = client => {
   client.on("messageReactionAdd", (msg, user) =>
     MessageReactionAdd.enterChannel(msg, user, client)
   );
+
+  client.on("messageUpdate", msg => {
+    msg.reply("ACONTECEU!!!");
+  });
 };

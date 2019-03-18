@@ -3,12 +3,18 @@
 const { ENTER_CHANNEL } = process.env;
 const categories = require("./config");
 
-const enterChannel = (reaction, user) => {
-  if (reaction.message.channel.name === ENTER_CHANNEL) {
-    const category = categories[reaction.emoji.name];
+const enterChannel = (event, client) => {
+  const { d: data } = event;
+
+  const user = client.users.get(data.user_id);
+  const channel = client.channels.get(data.channel_id);
+  const guild = client.guilds.get(data.guild_id);
+
+  if (channel.name === ENTER_CHANNEL) {
+    const category = categories[data.emoji.name];
 
     if (category) {
-      const member = reaction.emoji.guild.members.get(user.id);
+      const member = guild.members.get(user.id);
       member.addRole(category.role.id);
     }
   }

@@ -1,12 +1,13 @@
 "use strict";
 
-const { COMMAND_PREFIX } = process.env;
+const messages = require("./config");
 
-const ping = (msg, client) => {
-  if (msg.content === `${COMMAND_PREFIX}ping`)
-    msg.reply(`Pong! Latência | ${client.ping}ms`);
+const response = (msg, client) => {
+  messages[msg.content] && msg.content.match(/^\!/)
+    ? msg.reply(messages[msg.content](client))
+    : msg.content.match(/^\!/) && msg.reply(messages["default"]);
 };
 
 module.exports = {
-  ping
+  response
 };

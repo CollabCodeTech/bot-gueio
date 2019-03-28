@@ -1,3 +1,5 @@
+"use strict";
+
 const { COMMAND_PREFIX } = process.env;
 const messages = [];
 

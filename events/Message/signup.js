@@ -1,5 +1,9 @@
 "use strict";
 
-const signup = () => "Funcionou";
+const signup = msg => {
+  msg.author.send("Vai!!!");
+
+  return false;
+};
 
 module.exports = signup;

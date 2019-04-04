@@ -9,7 +9,7 @@ const dbQuestions = [
 ];
 
 const exampleDb = {
-  user: "Nome#1234",
+  userDiscordId: "1928731982301928731908371",
   survey: [
     {
       question: "",
@@ -18,23 +18,27 @@ const exampleDb = {
   ],
   profile: {
     name: "marcobrunobr",
-    url: "http://collabcode.training/marcobrunobr"
+    url: "http://collabcode.training/"
   }
 };
 
-const db = {}
+const db = {
+  userDiscordId: "",
+  survey: [],
+  profile: {}
+}
 
 const signup = msg => {
   const {author} = msg;
 
-  db.user = `${author.username}#${author.discriminator}`
+  console.log("entrou")
+
+  db.userDiscordId = author.id; 
 
   author.send(`Depois que você responder todas as peguntas será gerado um currículo online para você usar nas entrevistas! Bora pra primeira pergunta...
 ${dbQuestions[0]}`);
 
-  db.survey.push({
-    question: dbQuestions[0]
-  })
+  db.survey.push()
 
 
   return false;

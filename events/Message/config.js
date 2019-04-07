@@ -1,7 +1,7 @@
 "use strict";
 
 const signup = require("./signup");
-const question = require("./question")
+const {getQuestion, setQuestion} = require("./question")
 const { COMMAND_PREFIX } = process.env;
 
 const messages = [];
@@ -16,6 +16,7 @@ messages[`${COMMAND_PREFIX}twitter`] = () =>
 
 messages[`${COMMAND_PREFIX}apresentar`] = ({ msg }) => signup(msg);
 
-messages[`${COMMAND_PREFIX}question`] = ({ msg }) => question(msg);
+messages[`${COMMAND_PREFIX}getQuestion`] = ({ msg }) => getQuestion(msg);
+messages[`${COMMAND_PREFIX}setQuestion`] = ({ msg }) => setQuestion(msg);
 
 module.exports = messages;

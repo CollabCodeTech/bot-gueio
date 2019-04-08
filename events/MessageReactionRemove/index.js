@@ -10,7 +10,7 @@ const quitChannel = (event, client) => {
   const channel = client.channels.get(data.channel_id);
   const guild = client.guilds.get(data.guild_id);
 
-  if (channel.name === ENTER_CHANNEL) {
+  if (channel.id === ENTER_CHANNEL) {
     const category = categories[data.emoji.name];
 
     if (category) {

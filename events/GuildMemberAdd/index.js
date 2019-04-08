@@ -1,8 +1,8 @@
-const { WELCOME_CHANNEL } = process.env;
+const { WELCOME_CHANNEL, ROLE_WELCOME } = process.env;
 
 const welcome = member => {
   const channel = member.guild.channels.find(
-    channel => channel.name === WELCOME_CHANNEL
+    channel => channel.id === WELCOME_CHANNEL
   );
 
   if (!channel) return;
@@ -16,7 +16,7 @@ Por favor, entre nos três canais a seguir antes de se divertir e trocar conheci
 <#557164780188729354>
 ╔════════════════
 `);
-  member.addRole("545502061601751040");
+  member.addRole(ROLE_WELCOME);
 };
 
 module.exports = {

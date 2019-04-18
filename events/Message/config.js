@@ -8,7 +8,10 @@ messages["default"] = "Comando inválido!";
 commands.forEach((value) => {
   messages[`${COMMAND_PREFIX}${value.command}`] = client => {
     if (value.showAllCommands) {
-      return commands.map(a => COMMAND_PREFIX + a.command);
+      return commands.map((a, index) => (
+        index ? `${COMMAND_PREFIX}${a.command}` : `
+${COMMAND_PREFIX}${a.command}`
+      ));
     }
     return eval('`' + value.response + '`');
   }

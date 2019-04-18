@@ -1,33 +1,17 @@
 "use strict";
 
 const { COMMAND_PREFIX } = process.env;
+const { commands } = require('../../constants');
 const messages = [];
 
-messages["default"] = "Comando inváldo!";
-
-messages[`${COMMAND_PREFIX}ping`] = client =>
-  `Pong! Latência | ${client.ping}ms`;
-
-messages[`${COMMAND_PREFIX}twitter`] = () =>
-  "https://twitter.com/collabcodetech";
-
-messages[`${COMMAND_PREFIX}twitch`] = () => "http://twitch.tv/marcobrunobr";
-
-messages[`${COMMAND_PREFIX}youtube`] = () => "https://www.youtube.com/collabcode";
-
-messages[`${COMMAND_PREFIX}curso`] = () => `Para saber mais sobre o curso como, **ementa**, **próxima turma** ou qualquer outra parada, entre no site:
-http://dofrontaoend.collabcode.training`;
-
-messages[`${COMMAND_PREFIX}facebook`] = () => "https://www.facebook.com/collabcode";
-
-messages[`${COMMAND_PREFIX}comandos`] = () => `
-!ping
-!twitch
-!twitter
-!youtube
-!curso
-!facebook
-!comandos
-`
+messages["default"] = "Comando inválido!";
+commands.forEach((value) => {
+  messages[`${COMMAND_PREFIX}${value.command}`] = client => {
+    if (value.showAllCommands) {
+      return commands.map(a => COMMAND_PREFIX + a.command);
+    }
+    return eval('`' + value.response + '`');
+  }
+});
 
 module.exports = messages;

@@ -1,6 +1,6 @@
 const commands = [{
     "command": "cadastro",
-    "response": "Bora se cadastrar!!!"
+    "response": "${DirectMessage.signup(msg)}"
 },
 {
     "command": "curso",

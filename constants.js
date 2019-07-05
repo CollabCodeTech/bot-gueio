@@ -2,7 +2,7 @@ const commands = [
   {
     command: "curso",
     response:
-      "Inscrição para **Semana Do Front ao End** abertas, essa é uma oportunidade free e ao vivo para você conhecer o curso, faça seu cadastro: http://dofrontaoend.collabcode.training"
+      "Inscrição para **Semana Do Front ao End** abertas (15/07 até 22/07 às 19:32 horário de Brasília), essa é uma oportunidade free e ao vivo para você conhecer o curso, faça seu cadastro: http://dofrontaoend.collabcode.training"
   },
   {
     command: "ping",

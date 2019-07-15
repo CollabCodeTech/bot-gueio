@@ -2,7 +2,7 @@ const commands = [
   {
     command: "curso",
     response:
-      "Pré-inscrição para a **Turma Do Front ao End** abertas, vagas limitas a 120 pessoas, faça sua pré-inscrição agora que no dia **19/07** envio um email para efetuar sua inscrição: http://dofrontaoend.collabcode.training"
+      "Pré-inscrição para a **Turma Do Front ao End** abertas, vagas limitadas para 120 pessoas, faça sua pré-inscrição agora que no dia **19/07** envio um email para você efetuar sua inscrição: http://dofrontaoend.collabcode.training"
   },
   {
     command: "ping",

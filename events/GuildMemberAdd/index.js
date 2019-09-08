@@ -13,7 +13,6 @@ Boas vinda ao servidor da CollabCode, ${member}.
 Por favor, entre nos três canais a seguir antes de se divertir e trocar conhecimento com a galera!
 <#547539568006660096>
 <#547635393655210004>
-<#557164780188729354>
 ╔════════════════
 `);
   member.addRole(ROLE_WELCOME);

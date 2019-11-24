@@ -28,4 +28,11 @@ emojis["🐵"] = {
   }
 };
 
+emojis["rjgtav"] = {
+  channels: ['📜┇leia-primeiro'],
+  role: {
+    name: "📹 rjgtav"
+  }
+};
+
 module.exports = emojis;

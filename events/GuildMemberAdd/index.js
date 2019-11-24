@@ -9,13 +9,9 @@ const welcome = member => {
 
   channel.send(`
 ╚════════════════
-Boas vinda ao servidor da CollabCode, ${member}. 
-Por favor, entre nos três canais a seguir antes de se divertir e trocar conhecimento com a galera!
-<#547539568006660096>
-<#547635393655210004>
+Nova pessoa na comunidade, ${member}.
 ╔════════════════
 `);
-  member.addRole(ROLE_WELCOME);
 };
 
 module.exports = {

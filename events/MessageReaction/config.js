@@ -35,4 +35,12 @@ emojis["rjgtav"] = {
   }
 };
 
+emojis["javadevzone"] = {
+  channels: ['📜┇leia-primeiro'],
+  role: {
+    name: "📹 JavaDevZone"
+  }
+};
+
+
 module.exports = emojis;

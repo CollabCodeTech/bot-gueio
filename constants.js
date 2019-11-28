@@ -2,7 +2,7 @@ const commands = [
   {
     command: "curso",
     response:
-      "Curso online Do Front ao End está com as vagas esgotadas. Para receber novidades e ver a ementa entre no site: https://dofrontaoend.collabcode.training"
+      "Se inscreva na **Semana Do Front ao End** para receber o **eBook** e **layout do jogo** que faremos no mini-curos **ao vivo** e de **graça** de HTML, CSS e JavaScript nos dias **9, 10, 11, 12 e 13 de Dezembro**. Para se inscrever só entrar no site: https://dofrontaoend.collabcode.training/"
   },
   {
     command: "ping",

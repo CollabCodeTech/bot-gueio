@@ -12,6 +12,14 @@ const commands = [
     response: "http://bit.ly/telegram-collabcode"
   },
   {
+    command: "whats",
+    response: "http://bit.ly/whats-collabcode"
+  },
+  {
+    command: "whatsapp",
+    response: "http://bit.ly/whats-collabcode"
+  },
+  {
     command: "twitter",
     response: "https://twitter.com/collabcodetech"
   },

@@ -12,6 +12,8 @@ const welcome = member => {
 Nova pessoa na comunidade, ${member}.
 ╔════════════════
 `);
+
+  member.addRole(ROLE_WELCOME);
 };
 
 module.exports = {

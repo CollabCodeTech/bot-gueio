@@ -5,7 +5,15 @@ const commands = [
   },
   {
     command: "invite", 
-    response: "http://bit.ly/discord-collabcode"
+    response: "https://discord.gg/5NWxjg"
+  },
+  {
+    command: "discord", 
+    response: "https://discord.gg/5NWxjg"
+  },
+  {
+    command: "github", 
+    response: "https://github.com/collabcodetech"
   },
   {
     command: "telegram",
@@ -34,6 +42,22 @@ const commands = [
   {
     command: "facebook",
     response: "https://www.facebook.com/collabcode"
+  },
+  {
+    command: "command",
+    showAllCommands: true
+  },
+  {
+    command: "commands",
+    showAllCommands: true
+  },
+  {
+    command: "cmd",
+    showAllCommands: true
+  },
+  {
+    command: "cmds",
+    showAllCommands: true
   },
   {
     command: "comandos",

@@ -8,7 +8,7 @@ git clone git@github.com:CollabCodeTech/bot-gueio.git
 
 1. Criar na raiz do projeto um arquivo `.env` com o seguinte conteúdo:
 
-```md
+```bash
 TOKEN=aqui_vc_coloca_o_token_do_seu_bot
 
 WELCOME_CHANNEL=id_do_channel_de_boas_vindas

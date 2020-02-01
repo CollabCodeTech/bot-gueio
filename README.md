@@ -10,6 +10,11 @@ git clone git@github.com:CollabCodeTech/bot-gueio.git
 
 ```md
 TOKEN=aqui_vc_coloca_o_token_do_seu_bot
+
+WELCOME_CHANNEL=id_do_channel_de_boas_vindas
+ROLE_WELCOME=role_que_eh_adicionada_quando_o_usuário_entra
+
+COMMAND_PREFIX=prefixo_para_os_comandos
 ```
 
 1. É necessário você ter o Node e o yarn instalado na sua máquina

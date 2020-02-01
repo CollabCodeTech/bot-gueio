@@ -22,11 +22,11 @@ COMMAND_PREFIX=prefixo_para_os_comandos
 1. Instalar as dependências do projeto com o comando a seguir:
 
 ```bash
-yarn install
+npm install
 ```
 
 1. Subir o projeto em ambiente de desenvolvimento
 
 ```bash
-yarn run dev
+npm run dev
 ```
